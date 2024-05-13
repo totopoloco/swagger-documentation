@@ -59,46 +59,46 @@ openApiMeta {
 }
 
 
-openApiGenerate {
-    inputSpec = "$projectDir/src/main/resources/static/swagger.yaml".toString()
-    outputDir = "$buildDir/generate-resources".toString()
-    generatorName = "csharp"
-    apiPackage = "at.mavila.rest.documentation.api"
-    modelPackage = "at.mavila.rest.documentation.model"
-    configOptions = [
-            targetFramework : 'net8.0',
-            optionalProjectFile: 'true',
-            hideGenerationTimestamp: 'true',
-            packageName: 'OpenApiNetCoreClient',
-    ]
-}
-
 //openApiGenerate {
 //    inputSpec = "$projectDir/src/main/resources/static/swagger.yaml".toString()
 //    outputDir = "$buildDir/generate-resources".toString()
-//    generatorName = "spring"
+//    generatorName = "csharp"
 //    apiPackage = "at.mavila.rest.documentation.api"
 //    modelPackage = "at.mavila.rest.documentation.model"
 //    configOptions = [
-//            dateLibrary            : 'java8-localdatetime',
-//            interfaceOnly          : 'true',
-//            generateClientAsBean   : 'false',
-//            useJakartaEe           : 'true',
-//            useBeanValidation      : 'true',
-//            skipDefaultInterface   : 'true',
+//            targetFramework : 'net8.0',
+//            optionalProjectFile: 'true',
 //            hideGenerationTimestamp: 'true',
-//            useSpringBoot3         : 'true',
-//            useSpringController    : 'true',
-//            useOptional            : 'true',
-//            serializableModel      : 'true',
-//            cleanupOutputDir       : 'true',
-//            useSwaggerUI           : 'true',
-//            annotationLibrary      : 'swagger2',
-//
+//            packageName: 'OpenApiNetCoreClient',
 //    ]
-//
-//
 //}
+
+openApiGenerate {
+    inputSpec = "$projectDir/src/main/resources/static/swagger.yaml".toString()
+    outputDir = "$buildDir/generate-resources".toString()
+    generatorName = "spring"
+    apiPackage = "at.mavila.rest.documentation.api"
+    modelPackage = "at.mavila.rest.documentation.model"
+    configOptions = [
+            dateLibrary            : 'java8-localdatetime',
+            interfaceOnly          : 'true',
+            generateClientAsBean   : 'false',
+            useJakartaEe           : 'true',
+            useBeanValidation      : 'true',
+            skipDefaultInterface   : 'true',
+            hideGenerationTimestamp: 'true',
+            useSpringBoot3         : 'true',
+            useSpringController    : 'true',
+            useOptional            : 'true',
+            serializableModel      : 'true',
+            cleanupOutputDir       : 'true',
+            useSwaggerUI           : 'true',
+            annotationLibrary      : 'swagger2',
+
+    ]
+
+
+}
 
 sourceSets {
     main {
