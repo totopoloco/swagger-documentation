@@ -39,3 +39,4 @@ out/
 
 ### Open API ###
 !**/src/main/gen/**/
+./src/main/gen/
