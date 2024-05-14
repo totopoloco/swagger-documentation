@@ -62,6 +62,35 @@ openApiMeta {
 //openApiGenerate {
 //    inputSpec = "$projectDir/src/main/resources/static/swagger.yaml".toString()
 //    outputDir = "$buildDir/generate-resources".toString()
+//    generatorName = "swift5"
+//    apiPackage = "at.mavila.rest.documentation.api"
+//    modelPackage = "at.mavila.rest.documentation.model"
+//    configOptions = [
+//            projectName: 'OpenApiSwiftClient',
+//            responseAs: 'RxSwift',
+//            unwrapRequired: 'true',
+//    ]
+//}
+
+
+//openApiGenerate {
+//    inputSpec = "$projectDir/src/main/resources/static/swagger.yaml".toString()
+//    outputDir = "$buildDir/generate-resources".toString()
+//    generatorName = "javascript"
+//    apiPackage = "at.mavila.rest.documentation.api"
+//    modelPackage = "at.mavila.rest.documentation.model"
+//    configOptions = [
+//            usePromises: 'true',
+//            useES6: 'true',
+//            hideGenerationTimestamp: 'true',
+//            packageName: 'OpenApiJsClient',
+//    ]
+//}
+
+
+//openApiGenerate {
+//    inputSpec = "$projectDir/src/main/resources/static/swagger.yaml".toString()
+//    outputDir = "$buildDir/generate-resources".toString()
 //    generatorName = "csharp"
 //    apiPackage = "at.mavila.rest.documentation.api"
 //    modelPackage = "at.mavila.rest.documentation.model"
