@@ -4,7 +4,13 @@ servers:
     url: http://localhost:8345
 info:
   title: Country and Country Language API
-  description: This API provides information about countries and their languages.
+  description: |
+    This API provides information about countries and their languages.
+    Additional Contacts:
+      - Name: Another person
+        Email: test@dddd.com
+      - Name: Yet another person
+        Email: [yetanother@dddd.com](mailto:yetanother@dddd.com)
   version: "1.0.0"
   contact:
     name: Marco T. Ávila Cerón
